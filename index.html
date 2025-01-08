@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>manga List</title>
+    <title>Book List</title>
 </head>
 <body>
-    
-</body>
+    <h1>Book List</h1>
+    <div class="search-bar">
+     <label for="search">search books</label>
+     <input type="search" id="search-bar" placeholder="enter your query here!">
+     <div id="card-container">
+
+    <template id=card-temp>
+    <div class="book-card">
+        <img src="" alt="book-img">
+        <h2 class="book-title">I am the title</h2>
+        <!-- <p class="book-desc">I am some text look at me!</p> -->
+    </div>
+    </template>
+    </div>
+    <div class="border">list of liked books</div>
+    <ul id="liked-list"></ul>
+   </body>
+   <script src="script.js"></script>
 </html>
